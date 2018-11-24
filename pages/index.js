@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Layout from '../layouts/Main'
 import { getPosts } from '../services/blog'
 
 import Post from '../components/Post'
@@ -10,11 +11,11 @@ const Title = styled.h1`
 `
 
 const IndexPage = ({ posts }) => (
+  <Layout>
     <ul>
-      {posts && posts.map(p => (
-        <Post key={p.title} post={p} />
-      ))}
+      {posts.map(p => <Post key={p.title} post={p} />)}
     </ul>
+  </Layout>
 )
 
 IndexPage.getInitialProps = async ({ req }) => {
