@@ -1,0 +1,23 @@
+{
+  "name": "with-styled-components",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "lru-cache": "^5.1.1",
+    "next": "^7.0.2",
+    "next-routes": "^1.4.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.1.5"
+  },
+  "license": "ISC"
+}
