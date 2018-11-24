@@ -4,6 +4,6 @@ export function getPosts() {
   return fetch('http://0.0.0.0:1337/blogs')
 }
 
-export function getPost(slug) {
+export function getPostDetail(slug) {
   return fetch(`http://0.0.0.0:1337/blogs/${slug}`)
 }

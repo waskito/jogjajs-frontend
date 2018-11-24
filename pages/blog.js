@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import styled from 'styled-components';
-import { getPost } from '../services/blog';
+import { getPostDetail } from '../services/blog';
 import Layout from '../layouts/Main';
 import Head from 'next/head'
 
@@ -17,7 +17,7 @@ const PostPage = ({ post }) => (
 )
 
 PostPage.getInitialProps = async ({ query }) => {
-  const res = await getPost(query.slug)
+  const res = await getPostDetail(query.slug)
   const json = await res.json()
   return { post: json }
 }

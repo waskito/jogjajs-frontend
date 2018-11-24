@@ -5,7 +5,7 @@ import Wrapper from './Wrapper'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-export default ({ children, title = 'This is the default title' }) => (
+export default ({ children, title = 'JogjaJS Blog' }) => (
   <Wrapper>
     <Head>
       <title>{ title }</title>
@@ -19,7 +19,7 @@ export default ({ children, title = 'This is the default title' }) => (
     </main>
 
     <Footer>
-      Footer
+      Made with love from Jogja
     </Footer>
   </Wrapper>
 )

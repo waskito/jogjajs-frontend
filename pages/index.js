@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Head from 'next/head'
 import Layout from '../layouts/Main'
 import { getPosts } from '../services/blog'
 
@@ -12,8 +13,11 @@ const Title = styled.h1`
 
 const IndexPage = ({ posts }) => (
   <Layout>
+    <Head>
+      <title>Homepage</title>
+    </Head>
     <ul>
-      {posts.map(p => <Post key={p.title} post={p} />)}
+      {posts.map(p => <Post key={p.id} post={p} />)}
     </ul>
   </Layout>
 )
